@@ -15,6 +15,16 @@ function App() {
         >
           Learn React
         </a>
+        <div>
+          <a
+            className="App-link"
+            href="https://main.dtulr0y5rojd6.amplifyapp.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Check_AWS_WebSite
+          </a>
+        </div>
       </header>
     </div>
   );
