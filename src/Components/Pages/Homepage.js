@@ -1,4 +1,6 @@
+import { async } from "q";
 import React from "react";
+import { useEffect, useState } from "react";
 // import reactImage from "../../Images/react.png";
 // import jsImage from "../../Images/js.png";
 // import firebaseImage from "../../Images/firebase.jpg";
@@ -6,7 +8,7 @@ import React from "react";
 
 function Homepage() {
   return (
-<div className="container text-center">
+    <div className="container text-center">
       <h1>Shin Code</h1>
 
       {/* <img src={profileImage} className="profileImage" /> */}
@@ -85,13 +87,24 @@ function Homepage() {
               <p>Firebaseがつかえます</p>
             </div>
           </div>
-          <button type="button" class="btn btn-primary">
-            スキル一覧
+          <button type="button" class="btn btn-primary" onClick={sendEmail}>
+            メール送信
           </button>
+          <div>
+            <button
+              type="button"
+              class="btn btn-primary btn-react"
+              // onClick={testSteamAPI}
+            >
+              SteamAPIのテスト
+            </button>
+          </div>
         </div>
       </section>
     </div>
   );
 }
+
+function sendEmail() {}
 
 export default Homepage;
